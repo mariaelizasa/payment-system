@@ -1,0 +1,20 @@
+$white-color: #ffff;
+
+.button {
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  height: 35px;
+  width: 120px;
+  color: $white-color;
+}
+
+.button-fechar{
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  height: 22px;
+  width: 40px;
+  color: $white-color; 
+}
+

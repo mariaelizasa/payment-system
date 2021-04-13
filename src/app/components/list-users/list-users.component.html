@@ -1,0 +1,32 @@
+<section class="container">
+  <div class="container__loading" *ngIf="loading">
+    <mat-spinner></mat-spinner>
+  </div>
+  <div
+    class="content"
+    *ngFor="
+      let user of users | paginate: { itemsPerPage: 12, currentPage: page }"
+  >
+    <div class="content__users">
+      <img src="{{ user.img }}" />
+      <div class="content__users__info-wrapper">
+        <div class="content__users__info-wrapper--user">{{ user.name }}</div>
+        <div class="content__users__info-wrapper--username">
+          {{ user.username }}
+        </div>
+        <div class="content__users__info-wrapper--id">Id:{{ user.id }}</div>
+      </div>
+      <app-button
+        class="content__users__button"
+        [buttonName]="'Pagar'"
+        (click)="openModalPayment(user.id, user.name)"
+      ></app-button>
+    </div>
+  </div>
+  <div class="container__pagination">
+    <pagination-controls
+      class="a"
+      (pageChange)="page = $event"
+    ></pagination-controls>
+  </div>
+</section>

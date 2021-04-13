@@ -1,0 +1,41 @@
+$white-color: #ffff;
+$black-color: #000;
+$gray-color: #ccc;
+$title-color: #474971;
+
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+
+  &__content {
+    background: $white-color;
+    width: 500px;
+    height: 200px;
+
+    &__title {
+      color: $white-color;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 16px 24px;
+      background-color: $title-color;
+      justify-content: center;
+      display: flex;
+    }
+    &__message {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: $black-color;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "./scss/variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: $background-color;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  background-color: $button-color;
+}
+input {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+@font-face {
+  font-family: "Montserrat", sans-serif !important;
+  font-style: normal;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+}
+
+::ng-deep.mat-dialog-container {
+  background: none;
+  box-shadow: none;
+}
+select {
+  -webkit-padding-end: 0;
+}
+
+.ngx-pagination .current,
+.btn-info {
+  background: $button-color !important;
+  border-radius: 6px;
+}
+
+.ngx-pagination .current:hover {
+  background: $button-color !important;
+  border-radius: 6px;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: $title-color;
+}

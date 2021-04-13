@@ -1,0 +1,9 @@
+<div class="modal">
+  <div class="modal__content">
+    <div class="modal__content__title">Recibo de pagamento</div>
+    <div class="modal__content__message">
+      <span *ngIf="state">{{ state.message }}</span>
+      <span *ngIf="!state">{{ state.message }}</span>
+    </div>
+  </div>
+</div>
